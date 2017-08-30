@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Csharp.Nunit.Selenium.Controllers;
 using OpenQA.Selenium.Remote;
 using NUnit.Framework;
 using OpenQA.Selenium;
@@ -12,18 +13,13 @@ namespace Csharp.Nunit.Selenium.Screens
 
 		public const string Url = "http://google.com";
 
-		public GoogleScreen(RemoteWebDriver driver) : base(driver)
+		public GoogleScreen(RemoteWebDriver driver) : base(driver, new ScreenController(driver))
 		{
 
 		}
 
 		// change to override
 		public void Trait()
-		{
-			
-		}
-
-		private GoogleScreen GoTo()
 		{
 			
 		}
@@ -62,5 +58,7 @@ namespace Csharp.Nunit.Selenium.Screens
 
 		[FindsBy(How = How.CssSelector, Using = "#ires .g .r a")]
 		private IList<IWebElement> searchResults;
+
+
 	}
 }

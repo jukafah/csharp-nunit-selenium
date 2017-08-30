@@ -48,6 +48,10 @@
     <Folder Include="Test\Driver" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Src\Controllers\ActionsController.cs" />
+    <Compile Include="Src\Controllers\AssertController.cs" />
+    <Compile Include="Src\Controllers\IActions.cs" />
+    <Compile Include="Src\Controllers\IAssert.cs" />
     <Compile Include="Src\Data\TestData.cs" />
     <Compile Include="Src\Controllers\IScreen.cs" />
     <Compile Include="Src\Controllers\ScreenController.cs" />

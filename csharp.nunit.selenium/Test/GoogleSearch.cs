@@ -36,10 +36,11 @@ namespace Csharp.Nunit.Selenium.Test
         {
             screen
                 .NavigateTo()
-            .GoogleScreen()
+                .GoogleScreen()
                 .PerformSearch(searchTerm)
                 .SelectResult(searchTerm)
-                .CheckUrl(expectedUrl);
+                .Assert()
+                .AreEqual(screen.CurrentUrl(), expectedUrl);
         }
     }
 }

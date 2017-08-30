@@ -14,7 +14,7 @@ namespace Csharp.Nunit.Selenium.Controllers
             this.driver = driver;
         }
 
-        public ScreenController Url(string destination)
+        public IScreen Url(string destination)
         {
             driver.Navigate().GoToUrl(destination);
             return this;
