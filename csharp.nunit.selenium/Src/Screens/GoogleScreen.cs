@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using OpenQA.Selenium.Remote;
-using Csharp.Nunit.Selenium.Client;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
@@ -11,18 +10,22 @@ namespace Csharp.Nunit.Selenium.Screens
 	public class GoogleScreen : ScreenObject
 	{
 
-		public static string Url = "http://google.com";
-		
+		public const string Url = "http://google.com";
+
 		public GoogleScreen(RemoteWebDriver driver) : base(driver)
 		{
-			
+
 		}
-		
-		
+
 		// change to override
 		public void Trait()
 		{
-			// todo: implement overrides
+			
+		}
+
+		private GoogleScreen GoTo()
+		{
+			
 		}
 		
 		public GoogleScreen PerformSearch(string searchText)

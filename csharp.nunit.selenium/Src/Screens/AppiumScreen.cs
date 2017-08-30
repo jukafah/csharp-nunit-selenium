@@ -4,7 +4,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.PageObjects;
 
-namespace Csharp.Nunit.Selenium
+namespace Csharp.Nunit.Selenium.Screens
 {
     public class AppiumScreen : ScreenObject
     {

@@ -8,5 +8,7 @@ namespace Csharp.Nunit.Selenium.Controllers
         AppiumScreen AppiumScreen();
         JetBrainsScreen JetBrainsScreen();
         SeleniumScreen SeleniumScreen();
+        ScreenObject Url(string destination);
+        // implement additional screens
     }
 }

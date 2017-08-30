@@ -46,17 +46,16 @@
     <Folder Include="Src\Utility" />
     <Folder Include="Test\" />
     <Folder Include="Test\Driver" />
-    <Folder Include="Test\Resources\Devices" />
-    <Folder Include="Test\Resources\Users" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Src\Client\UIDriver.cs" />
     <Compile Include="Src\Data\TestData.cs" />
     <Compile Include="Src\Controllers\IScreen.cs" />
     <Compile Include="Src\Controllers\ScreenController.cs" />
+    <Compile Include="Src\Data\User.cs" />
     <Compile Include="Src\Screens\AppiumScreen.cs" />
     <Compile Include="Src\Screens\GoogleScreen.cs" />
     <Compile Include="Src\Screens\JetBrainsScreen.cs" />
+    <Compile Include="Src\Screens\Screen.cs" />
     <Compile Include="Src\Screens\ScreenObject.cs" />
     <Compile Include="Src\Screens\SeleniumScreen.cs" />
     <Compile Include="Test\Config\Config.cs" />
@@ -65,7 +64,10 @@
     <Compile Include="Test\Support\Hooks.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Test\Resources\devices.json" />
+    <EmbeddedResource Include="Test\Resources\Devices\devices.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Test\Resources\Users\smomcilovic.json" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

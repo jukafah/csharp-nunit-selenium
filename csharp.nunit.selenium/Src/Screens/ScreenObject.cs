@@ -1,20 +1,19 @@
 ﻿using System;
-using Csharp.Nunit.Selenium.Client;
 using Csharp.Nunit.Selenium.Controllers;
 using OpenQA.Selenium.Remote;
 
 namespace Csharp.Nunit.Selenium.Screens
 {
-    public class ScreenObject : UIDriver
+    public abstract class ScreenObject
     {
         private readonly RemoteWebDriver driver;
         
-        public ScreenObject(RemoteWebDriver driver) : base(driver)
+        protected ScreenObject(RemoteWebDriver driver)
         {
             this.driver = driver;
         }
 
-        public IScreen NavigateTo(String destination)
+        public ScreenController NavigateTo()
         {
             return new ScreenController(driver);
         }

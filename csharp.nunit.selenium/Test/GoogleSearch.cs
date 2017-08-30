@@ -9,13 +9,13 @@ namespace Csharp.Nunit.Selenium.Test
     [TestFixture]
     public class GoogleSearch : Hooks
     {
-        private ScreenObject screen;
+        private Screen screen;
         
         [SetUp]
         public void SetUp()
         {
             var driver = GetDriver();
-            this.screen = new ScreenObject(driver);
+            this.screen = new Screen(driver);
         }
         
         private object[] SearchTest =
@@ -35,7 +35,7 @@ namespace Csharp.Nunit.Selenium.Test
         public void SearchTests(string homepage, string searchTerm, string expectedUrl)
         {
             screen
-                .NavigateTo(GoogleScreen.Url)
+                .NavigateTo()
             .GoogleScreen()
                 .PerformSearch(searchTerm)
                 .SelectResult(searchTerm)

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq.Expressions;
 using Csharp.Nunit.Selenium.Screens;
 using OpenQA.Selenium.Remote;
 
@@ -13,9 +14,10 @@ namespace Csharp.Nunit.Selenium.Controllers
             this.driver = driver;
         }
 
-        private void GoTo(string destination)
+        public ScreenController Url(string destination)
         {
             driver.Navigate().GoToUrl(destination);
+            return this;
         }
 
         public GoogleScreen GoogleScreen()
@@ -37,5 +39,7 @@ namespace Csharp.Nunit.Selenium.Controllers
         {
             return new JetBrainsScreen(driver);
         }
+        
+        // throw new PendingExceptions() for screens not implemented
     }
 }

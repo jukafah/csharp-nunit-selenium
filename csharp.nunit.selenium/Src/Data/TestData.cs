@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Csharp.Nunit.Selenium
+namespace Csharp.Nunit.Selenium.Data
 {
 	public class TestData
 	{

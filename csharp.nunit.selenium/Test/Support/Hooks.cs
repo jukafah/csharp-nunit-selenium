@@ -1,4 +1,5 @@
 ﻿using System;
+using Csharp.Nunit.Selenium.Data;
 using Csharp.Nunit.Selenium.Test.Config;
 using Csharp.Nunit.Selenium.Test.Support;
 using NUnit.Framework;

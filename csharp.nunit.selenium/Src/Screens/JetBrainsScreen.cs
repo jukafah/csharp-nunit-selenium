@@ -1,7 +1,7 @@
 ﻿using Csharp.Nunit.Selenium.Screens;
 using OpenQA.Selenium.Remote;
 
-namespace Csharp.Nunit.Selenium
+namespace Csharp.Nunit.Selenium.Screens
 {
     public class JetBrainsScreen : ScreenObject
     {
