@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ECE406DC-9408-464D-94E7-1FF4A71EB21E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Csharp.Nunit.Selenium</RootNamespace>
+    <AssemblyName>Csharp.Nunit.Selenium</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.3.7.1\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\packages\Selenium.WebDriver.3.4.0\lib\net40\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\packages\Selenium.Support.3.4.0\lib\net40\WebDriver.Support.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Src\Utility" />
+    <Folder Include="Test\" />
+    <Folder Include="Test\Driver" />
+    <Folder Include="Test\Resources\Devices" />
+    <Folder Include="Test\Resources\Users" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Src\Client\UIDriver.cs" />
+    <Compile Include="Src\Data\TestData.cs" />
+    <Compile Include="Src\Controllers\IScreen.cs" />
+    <Compile Include="Src\Controllers\ScreenController.cs" />
+    <Compile Include="Src\Screens\AppiumScreen.cs" />
+    <Compile Include="Src\Screens\GoogleScreen.cs" />
+    <Compile Include="Src\Screens\JetBrainsScreen.cs" />
+    <Compile Include="Src\Screens\ScreenObject.cs" />
+    <Compile Include="Src\Screens\SeleniumScreen.cs" />
+    <Compile Include="Test\Config\Config.cs" />
+    <Compile Include="Test\GoogleSearch.cs" />
+    <Compile Include="Test\Support\DriverFactory.cs" />
+    <Compile Include="Test\Support\Hooks.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Test\Resources\devices.json" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

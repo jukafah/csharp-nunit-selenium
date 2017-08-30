@@ -1,0 +1,10 @@
+{
+  "name": "csharp.nunit.selenium",
+  "version": "0.0.1",
+  "description": "server dependencies",
+  "homepage": "https://github.com/jukafah/cucumberjs-webdriverio",
+  "author": "Steve Momcilovic <smomcilovic@tapqa.com>",
+  "devDependencies": {
+    "selenium-standalone": "6.6.0"
+  }
+}

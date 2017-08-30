@@ -1,0 +1,225 @@
+{
+  "HTCOne": {
+    "deviceName": "HTC One",
+    "platformName": "Android",
+    "platformVersion": "4.4.4",
+    "avd": "HTCOne",
+    "avdReadyTimeout": 60000
+  },
+
+  "Nexus4": {
+    "deviceName": "Nexus 4",
+    "platformName": "Android",
+    "platformVersion": "4.4.4",
+    "avd": "Nexus4",
+    "avdReadyTimeout": 60000
+  },
+
+  "Nexus5": {
+    "deviceName": "Nexus 5",
+    "platformName": "Android",
+    "platformVersion": "5.0",
+    "avd": "Nexus5",
+    "avdReadyTimeout": 60000
+  },
+
+  "Nexus6": {
+    "deviceName": "Nexus 6",
+    "platformName": "Android",
+    "platformVersion": "5.1.0",
+    "avd": "Nexus6",
+    "avdReadyTimeout": 60000
+  },
+
+  "GalaxyS6": {
+    "deviceName": "Galaxy S6",
+    "platformName": "Android",
+    "platformVersion": "5.1.0",
+    "avd": "GalaxyS6",
+    "avdReadyTimeout": 60000
+  },
+
+  "Android_Accelerated_x86": {
+    "deviceName": "Android_Accelerated_x86",
+    "platformName": "Android",
+    "avd": "Android_Accelerated_x86",
+    "avdReadyTimeout": 60000
+  },
+
+  "GalaxyS7": {
+    "deviceName": "Galaxy S7",
+    "platformName": "Android",
+    "platformVersion": "6.0",
+    "avd": "GalaxyS7",
+    "avdReadyTimeout": 60000
+  },
+
+  "GalaxyS7Edge": {
+    "deviceName": "Galaxy S7 Edge",
+    "platformName": "Android",
+    "platformVersion": "6.0",
+    "avd": "GalaxyS7Edge",
+    "avdReadyTimeout": 60000
+  },
+
+  "MotoZForce": {
+    "deviceName": "MOTO Z Force Droid",
+    "platformName": "Android",
+    "platformVersion": "6.0",
+    "avd": "MotoZForce",
+    "avdReadyTimeout": 60000
+  },
+
+  "HTC10": {
+    "deviceName": "HTC 10",
+    "platformName": "Android",
+    "platformVersion": "6.0",
+    "avd": "HTC10",
+    "avdReadyTimeout": 60000
+  },
+
+  "Nexus6P": {
+    "deviceName": "Nexus 6P",
+    "platformName": "Android",
+    "platformVersion": "7.0",
+    "avd": "Nexus6P",
+    "avdReadyTimeout": 60000
+  },
+
+  "Pixel": {
+    "deviceName": "Pixel",
+    "platformName": "Android",
+    "platformVersion": "7.1",
+    "avd": "Pixel",
+    "avdReadyTimeout": 60000
+  },
+
+  "SamsungGalaxyTabS2": {
+    "deviceName": "Samsung Galaxy Tab S2",
+    "platformName": "Android",
+    "platformVersion": "ADD_ME",
+    "avd": "SamsungGalaxyTabS2",
+    "avdReadyTimeout": 60000
+  },
+
+  "SonyXperiaZ4Tablet": {
+    "deviceName": "Sony Xperia Z4 Tablet",
+    "platformName": "Anroid",
+    "platformVersion": "ADD_ME",
+    "avd": "SonyXperiaZ4Tablet",
+    "avdReadyTimeout": 60000
+  },
+
+  "Nexus9": {
+    "deviceName": "Nexus 9",
+    "platformName": "Anroid",
+    "platformVersion": "ADD_ME",
+    "avd": "Nexus9",
+    "avdReadyTimeout": 60000
+  },
+
+
+  "iphone4s": {
+    "deviceName": "iPhone 4s",
+    "platformName": "iOS",
+    "platformVersion": "9.3",
+    "autoAcceptAlerts": "true",
+    "automationName": "XCUITEST"
+  },
+
+  "iphone5": {
+    "deviceName": "iPhone 5",
+    "platformName": "iOS",
+    "platformVersion": "9.3",
+    "autoAcceptAlerts": "true",
+    "automationName": "XCUITEST"
+  },
+
+  "iphone6": {
+    "deviceName": "iPhone 6",
+    "platformName": "iOS",
+    "platformVersion": "10.0",
+    "autoAcceptAlerts": "true",
+    "automationName": "XCUITEST"
+  },
+
+  "iphone6splus": {
+    "deviceName": "iPhone 6s Plus",
+    "platformName": "iOS",
+    "platformVersion": "10.2",
+    "autoAcceptAlerts": "true",
+    "automationName": "XCUITEST"
+  },
+
+  "iphone7": {
+    "deviceName": "iPhone 7",
+    "platformName": "iOS",
+    "platformVersion": "10.0",
+    "autoAcceptAlerts": "true",
+    "automationName": "XCUITEST"
+  },
+
+  "iphone7plus": {
+    "deviceName": "iPhone 7 Plus",
+    "platformName": "iOS",
+    "platformVersion": "10.2",
+    "autoAcceptAlerts": "true",
+    "automationName": "XCUITEST"
+  },
+
+  "iphoneSE": {
+    "deviceName": "iPhone SE",
+    "platformName": "iOS",
+    "platformVersion": "10.2",
+    "autoAcceptAlerts": "true"
+  },
+
+  "iPad2": {
+    "deviceName": "iPad 2",
+    "platformName": "iOS",
+    "platformVersion": "9.3",
+    "autoAcceptAlerts": "true",
+    "automationName": "XCUITEST"
+  },
+
+  "iPadAir": {
+    "deviceName": "iPad Air",
+    "platformName": "iOS",
+    "platformVersion": "10.0",
+    "autoAcceptAlerts": "true",
+    "automationName": "XCUITEST"
+  },
+
+  "iPadAir2": {
+    "deviceName": "iPad Air 2",
+    "platformName": "iOS",
+    "platformVersion": "10.2",
+    "autoAcceptAlerts": "true",
+    "automationName": "XCUITEST"
+  },
+
+  "Chrome": {
+    "browserName": "chrome",
+    "platformName": "desktop"
+  },
+
+  "Firefox": {
+    "browserName": "firefox",
+    "platformName": "desktop"
+  },
+
+  "Safari": {
+    "browserName": "safari",
+    "platformName": "desktop"
+  },
+
+  "IE": {
+    "browserName": "internet explorer",
+    "platformName": "desktop"
+  },
+
+  "Edge": {
+    "browserName": "edge",
+    "platformName": "desktop"
+  }
+}

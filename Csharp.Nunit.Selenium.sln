@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Csharp.Nunit.Selenium", "csharp.nunit.selenium\csharp.nunit.selenium.csproj", "{ECE406DC-9408-464D-94E7-1FF4A71EB21E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ECE406DC-9408-464D-94E7-1FF4A71EB21E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECE406DC-9408-464D-94E7-1FF4A71EB21E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECE406DC-9408-464D-94E7-1FF4A71EB21E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECE406DC-9408-464D-94E7-1FF4A71EB21E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
