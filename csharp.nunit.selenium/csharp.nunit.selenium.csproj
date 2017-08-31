@@ -48,19 +48,17 @@
     <Folder Include="Test\Driver" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Src\Controllers\ActionsController.cs" />
-    <Compile Include="Src\Controllers\AssertController.cs" />
-    <Compile Include="Src\Controllers\IActions.cs" />
-    <Compile Include="Src\Controllers\IAssert.cs" />
-    <Compile Include="Src\Data\TestData.cs" />
-    <Compile Include="Src\Controllers\IScreen.cs" />
+    <Compile Include="Src\Controllers\IAction.cs" />
+    <Compile Include="Src\Controllers\IController.cs" />
+    <Compile Include="Src\Controllers\ScreenActions.cs" />
     <Compile Include="Src\Controllers\ScreenController.cs" />
+    <Compile Include="Src\Data\TestData.cs" />
     <Compile Include="Src\Data\User.cs" />
     <Compile Include="Src\Screens\AppiumScreen.cs" />
     <Compile Include="Src\Screens\GoogleScreen.cs" />
+    <Compile Include="Src\Screens\IScreen.cs" />
     <Compile Include="Src\Screens\JetBrainsScreen.cs" />
     <Compile Include="Src\Screens\Screen.cs" />
-    <Compile Include="Src\Screens\ScreenObject.cs" />
     <Compile Include="Src\Screens\SeleniumScreen.cs" />
     <Compile Include="Test\Config\Config.cs" />
     <Compile Include="Test\GoogleSearch.cs" />

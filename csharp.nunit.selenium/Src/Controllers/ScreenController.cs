@@ -1,23 +1,17 @@
 ﻿using System;
-using System.Linq.Expressions;
 using Csharp.Nunit.Selenium.Screens;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
 
 namespace Csharp.Nunit.Selenium.Controllers
 {
-    public class ScreenController : IScreen
+    public abstract class ScreenController<T> : IController
     {
         private readonly RemoteWebDriver driver;
-
-        public ScreenController(RemoteWebDriver driver)
+        
+        protected ScreenController(RemoteWebDriver driver)
         {
             this.driver = driver;
-        }
-
-        public IScreen Url(string destination)
-        {
-            driver.Navigate().GoToUrl(destination);
-            return this;
         }
 
         public GoogleScreen GoogleScreen()
@@ -39,7 +33,16 @@ namespace Csharp.Nunit.Selenium.Controllers
         {
             return new JetBrainsScreen(driver);
         }
-        
-        // throw new PendingExceptions() for screens not implemented
+
+        public T EnterText(string field, string text)
+        {
+            IWebElement elem = GetElement(field);
+            elem.SendKeys("blah");
+        }
+
+        public IWebElement GetElement(string element)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

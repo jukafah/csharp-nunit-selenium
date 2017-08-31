@@ -4,26 +4,31 @@ using Csharp.Nunit.Selenium.Controllers;
 using OpenQA.Selenium.Remote;
 using NUnit.Framework;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Support.Events;
 using OpenQA.Selenium.Support.PageObjects;
 
 namespace Csharp.Nunit.Selenium.Screens
 {
-	public class GoogleScreen : ScreenObject
+	public class GoogleScreen : ScreenController<GoogleScreen>, IScreen<GoogleScreen>
 	{
-
 		public const string Url = "http://google.com";
 
-		public GoogleScreen(RemoteWebDriver driver) : base(driver, new ScreenController(driver))
+		public GoogleScreen(RemoteWebDriver driver) : base(driver)
 		{
 
-		}
-
-		// change to override
-		public void Trait()
-		{
-			
 		}
 		
+		public GoogleScreen Trait()
+		{
+			throw new NotImplementedException();
+		}
+
+		public GoogleScreen Navigate()
+		{
+			throw new NotImplementedException();
+		}
+
+
 		public GoogleScreen PerformSearch(string searchText)
 		{
 			searchBox.Clear();

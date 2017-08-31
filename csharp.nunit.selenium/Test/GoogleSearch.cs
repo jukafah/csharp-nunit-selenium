@@ -34,13 +34,26 @@ namespace Csharp.Nunit.Selenium.Test
         [TestCaseSource("SearchTest")]
         public void SearchTests(string homepage, string searchTerm, string expectedUrl)
         {
-            screen
-                .NavigateTo()
-                .GoogleScreen()
-                .PerformSearch(searchTerm)
-                .SelectResult(searchTerm)
-                .Assert()
-                .AreEqual(screen.CurrentUrl(), expectedUrl);
+            screen.GoogleScreen().Navigate().EnterText("blah", "blah").SelectResult("blah");
+            screen.EnterText("blah", "blah").GoogleScreen().Navigate().EnterText("blah", "blah").SelectResult("blah");
+
+//            screen.EnterText().
+
+//            screen.GoogleScreen().EnterText().Sel
+//            screen.GoogleScreen().EnterText(
+//            screen.GoogleScreen().En
+//            screen.GoogleScreen().EnterText();
+//            screen.EnterText();
+//            screen.GoogleScreen().Navigate()
+//                .EnterText("blah", "blah").GoogleScreen().
+//            screen
+//                .GoogleScreen()
+//                .Navigate()
+//                .GoogleScreen()
+//                .PerformSearch(searchTerm)
+//                .SelectResult(searchTerm)
+//                .Assert()
+//                .AreEqual(screen.CurrentUrl(), expectedUrl);
         }
     }
 }

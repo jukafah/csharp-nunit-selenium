@@ -21,7 +21,8 @@ namespace Csharp.Nunit.Selenium.Test.Config
         Dictionary<string, object> GetDevice()
         {
             Assembly assembly = Assembly.GetExecutingAssembly();
-            Stream deviceStream = assembly.GetManifestResourceStream("Csharp.Nunit.Selenium.Test.Resources.devices.json");
+            Stream deviceStream = assembly.GetManifestResourceStream("Csharp.Nunit.Selenium.Test.Resources.Devices.devices.json");
+            
             if (deviceStream == null)
                 throw new FileNotFoundException("Could not find devices.json resource");
             
