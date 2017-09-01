@@ -3,7 +3,7 @@ using OpenQA.Selenium.Remote;
 
 namespace Csharp.Nunit.Selenium.Screens
 {
-    public class Screen : ScreenController<Screen>, IScreen<Screen>
+    public class Screen : ScreenObject<Screen>, IScreen<Screen>
     {
         private RemoteWebDriver driver;
 

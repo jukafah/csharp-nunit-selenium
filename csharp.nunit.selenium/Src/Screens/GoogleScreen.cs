@@ -9,7 +9,7 @@ using OpenQA.Selenium.Support.PageObjects;
 
 namespace Csharp.Nunit.Selenium.Screens
 {
-	public class GoogleScreen : ScreenController<GoogleScreen>, IScreen<GoogleScreen>
+	public class GoogleScreen : ScreenObject<GoogleScreen>, IScreen<GoogleScreen>
 	{
 		public const string Url = "http://google.com";
 

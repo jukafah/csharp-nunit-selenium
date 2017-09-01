@@ -37,6 +37,14 @@ namespace Csharp.Nunit.Selenium.Test
             screen.GoogleScreen().Navigate().EnterText("blah", "blah").SelectResult("blah");
             screen.EnterText("blah", "blah").GoogleScreen().Navigate().EnterText("blah", "blah").SelectResult("blah");
 
+            screen.GoogleScreen().EnterText("blah", "blah").Navigate();
+            screen.Navigate();
+            screen.EnterText("blah", "blah");
+            
+            
+            screen
+                
+
 //            screen.EnterText().
 
 //            screen.GoogleScreen().EnterText().Sel

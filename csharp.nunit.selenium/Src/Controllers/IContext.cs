@@ -2,11 +2,13 @@
 
 namespace Csharp.Nunit.Selenium.Controllers
 {
-    public interface IController
+    public interface IContext
     {
         GoogleScreen GoogleScreen();
         AppiumScreen AppiumScreen();
         JetBrainsScreen JetBrainsScreen();
         SeleniumScreen SeleniumScreen();
+        
+        // additional screens here
     }
 }

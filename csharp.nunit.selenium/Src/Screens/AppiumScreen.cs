@@ -7,7 +7,7 @@ using OpenQA.Selenium.Support.PageObjects;
 
 namespace Csharp.Nunit.Selenium.Screens
 {
-    public class AppiumScreen : ScreenController<AppiumScreen>, IScreen<AppiumScreen>
+    public class AppiumScreen : ScreenObject<AppiumScreen>, IScreen<AppiumScreen>
     {
         public AppiumScreen(RemoteWebDriver driver) : base(driver)
         {
@@ -18,5 +18,15 @@ namespace Csharp.Nunit.Selenium.Screens
         
         [FindsBy(How = How.CssSelector, Using = ".navbar .container-fluid .navbar-header .navbar-brand")]
         private IWebElement trait;
+
+        public AppiumScreen Trait()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public AppiumScreen Navigate()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
