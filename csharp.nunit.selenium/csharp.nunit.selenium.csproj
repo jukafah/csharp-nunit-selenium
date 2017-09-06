@@ -48,15 +48,14 @@
     <Folder Include="Test\Driver" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Src\Controllers\ContextController.cs" />
+    <Compile Include="Src\Controllers\ActionController.cs" />
+    <Compile Include="Src\Controllers\IScreens.cs" />
     <Compile Include="Src\Controllers\IAction.cs" />
-    <Compile Include="Src\Controllers\IContext.cs" />
-    <Compile Include="Src\Controllers\ScreenActions.cs" />
+    <Compile Include="Src\Controllers\NavigationController.cs" />
     <Compile Include="Src\Data\TestData.cs" />
     <Compile Include="Src\Data\User.cs" />
     <Compile Include="Src\Screens\AppiumScreen.cs" />
     <Compile Include="Src\Screens\GoogleScreen.cs" />
-    <Compile Include="Src\Screens\IScreen.cs" />
     <Compile Include="Src\Screens\JetBrainsScreen.cs" />
     <Compile Include="Src\Screens\Screen.cs" />
     <Compile Include="Src\Screens\ScreenObject.cs" />

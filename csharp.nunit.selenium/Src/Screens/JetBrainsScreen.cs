@@ -4,19 +4,16 @@ using OpenQA.Selenium.Remote;
 
 namespace Csharp.Nunit.Selenium.Screens
 {
-    public class JetBrainsScreen : ScreenObject<JetBrainsScreen>, IScreen<JetBrainsScreen>
+    public class JetBrainsScreen : ScreenObject<JetBrainsScreen>
     {
         public JetBrainsScreen(RemoteWebDriver driver) : base(driver)
         {
             
         }
 
-        public JetBrainsScreen Trait()
-        {
-            throw new System.NotImplementedException();
-        }
+        public override string Url => "https://www.jetbrains.com/";
 
-        public JetBrainsScreen Navigate()
+        public override JetBrainsScreen Trait()
         {
             throw new System.NotImplementedException();
         }

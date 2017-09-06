@@ -4,7 +4,7 @@ using OpenQA.Selenium.Remote;
 
 namespace Csharp.Nunit.Selenium.Screens
 {
-    public class SeleniumScreen : ScreenObject<SeleniumScreen>, IScreen<SeleniumScreen>
+    public class SeleniumScreen : ScreenObject<SeleniumScreen>
     {
         private readonly RemoteWebDriver driver;
         
@@ -13,12 +13,7 @@ namespace Csharp.Nunit.Selenium.Screens
             
         }
 
-        public SeleniumScreen Trait()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public SeleniumScreen Navigate()
+        public override SeleniumScreen Trait()
         {
             throw new System.NotImplementedException();
         }

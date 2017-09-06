@@ -34,34 +34,28 @@ namespace Csharp.Nunit.Selenium.Test
         [TestCaseSource("SearchTest")]
         public void SearchTests(string homepage, string searchTerm, string expectedUrl)
         {
-            screen.GoogleScreen().Navigate().EnterText("blah", "blah").SelectResult("blah");
-            screen.EnterText("blah", "blah").GoogleScreen().Navigate().EnterText("blah", "blah").SelectResult("blah");
-
-            screen.GoogleScreen().EnterText("blah", "blah").Navigate();
-            screen.Navigate();
-            screen.EnterText("blah", "blah");
-            
-            
-            screen
-                
-
-//            screen.EnterText().
-
-//            screen.GoogleScreen().EnterText().Sel
-//            screen.GoogleScreen().EnterText(
-//            screen.GoogleScreen().En
-//            screen.GoogleScreen().EnterText();
-//            screen.EnterText();
-//            screen.GoogleScreen().Navigate()
-//                .EnterText("blah", "blah").GoogleScreen().
+//            screen.NavigateTo().GoogleScreen().
+//            screen.NavigateTo().GoogleScreen()
+            screen.NavigateTo().GoogleScreen();
+//            screen.NavigateTo().Url
+//            screen.NavigateTo().
+//            screen.NavigateTo()
+//            screen.When()
+//            screen.Get
+//            screen.
 //            screen
+//            screen.Given().Url("here").
+//            screen.Navigate().
+//            screen.Navigate()
+//            screen.Given().GoogleScreen().N
+//            screen.Navigate();
+//            screen
+//                .Given()
 //                .GoogleScreen()
 //                .Navigate()
-//                .GoogleScreen()
 //                .PerformSearch(searchTerm)
 //                .SelectResult(searchTerm)
-//                .Assert()
-//                .AreEqual(screen.CurrentUrl(), expectedUrl);
+//                .VerifyUrl(expectedUrl);
         }
     }
 }
